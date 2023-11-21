@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="hms" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f4d65710-50e8-481a-86a0-905f2685f8b0">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="hospitalName" class="java.lang.String"/>
+	<queryString language="SQL">
+		<![CDATA[]]>
+	</queryString>
+	<field name="appointmentId" class="java.lang.Integer"/>
+	<field name="patientName" class="java.lang.String"/>
+	<field name="age" class="java.lang.Integer"/>
+	<field name="weight" class="java.lang.Float"/>
+	<field name="height" class="java.lang.Float"/>
+	<field name="bloodGroup" class="java.lang.String"/>
+	<field name="contactNo" class="java.lang.String"/>
+	<field name="address" class="java.lang.String"/>
+	<field name="doctorName" class="java.lang.String"/>
+	<field name="appointmentDate" class="java.util.Date"/>
+	<field name="appointmentTime" class="java.lang.String"/>
+	<field name="problemDescription" class="java.lang.String"/>
+	<field name="medicalHistory" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="87" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="50" width="170" height="24" uuid="311b926f-362a-4b30-a975-f490a3d6b0c6"/>
+				<textElement>
+					<font size="15"/>
+				</textElement>
+				<text><![CDATA[Appointment List]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="80" y="0" width="400" height="30" forecolor="#F02724" uuid="3ec492b4-cc2a-43f6-bd40-bac863ae84a0"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{hospitalName}]]></textFieldExpression>
+			</textField>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="380" y="50" width="135" height="24" uuid="313c2faf-b50c-4121-be6a-05dff2e4d1f5"/>
+				<textElement>
+					<font size="15"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="37" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="50" height="19" uuid="008b937e-be94-4389-8946-15efe348dd9a"/>
+				<textElement>
+					<font size="5"/>
+				</textElement>
+				<text><![CDATA[appointmentId]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="50" y="0" width="40" height="19" uuid="bacec995-bdd6-41b1-a40a-c2fe956f6b9c"/>
+				<textElement>
+					<font size="5"/>
+				</textElement>
+				<text><![CDATA[patientName]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="90" y="0" width="20" height="19" uuid="d18b551d-acca-4523-b986-bd51cae97003"/>
+				<textElement>
+					<font size="5"/>
+				</textElement>
+				<text><![CDATA[age]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="110" y="0" width="30" height="19" uuid="1e4249b3-8e39-412f-8afc-a38334254caf"/>
+				<textElement>
+					<font size="5"/>
+				</textElement>
+				<text><![CDATA[weight]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="140" y="0" width="30" height="19" uuid="b22da2ad-266b-4ea5-a195-63c1896bff94"/>
+				<textElement>
+					<font size="5"/>
+				</textElement>
+				<text><![CDATA[height]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="170" y="0" width="50" height="19" uuid="7b4025be-6545-4c2b-b124-45d4425b1fc5"/>
+				<textElement>
+					<font size="5"/>
+				</textElement>
+				<text><![CDATA[contactNo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="220" y="0" width="40" height="19" uuid="a2a771b3-9145-4bb6-8a7b-b62447d795fd"/>
+				<textElement>
+					<font size="5"/>
+				</textElement>
+				<text><![CDATA[bloodGroup]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="260" y="0" width="30" height="19" uuid="949d00c3-0efc-4a72-9703-c3b1133020e0"/>
+				<textElement>
+					<font size="5"/>
+				</textElement>
+				<text><![CDATA[address]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="290" y="0" width="50" height="19" uuid="06eb0f36-e96b-46c7-b44c-d2cd9174e4b8"/>
+				<textElement>
+					<font size="5"/>
+				</textElement>
+				<text><![CDATA[doctorName]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="340" y="0" width="60" height="19" uuid="0037fcea-098d-4f1f-9c37-a59960c50824"/>
+				<textElement>
+					<font size="5"/>
+				</textElement>
+				<text><![CDATA[appointmentDate]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="400" y="0" width="50" height="19" uuid="17a4329b-6a41-4c00-b561-e432e2173b3f"/>
+				<textElement>
+					<font size="5"/>
+				</textElement>
+				<text><![CDATA[appointmentTime]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="450" y="0" width="50" height="19" uuid="6a84ccc3-ca07-43c7-9cfd-c8b65c90d4fd"/>
+				<textElement>
+					<font size="5"/>
+				</textElement>
+				<text><![CDATA[medicalHistory]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="500" y="0" width="60" height="19" uuid="cb3d4ce3-8ec9-4be0-90f1-5ec299b2ec73"/>
+				<textElement>
+					<font size="5"/>
+				</textElement>
+				<text><![CDATA[problemDescription]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="50" height="20" uuid="0f96c0b1-2f78-444b-8688-faaaa21640d7"/>
+				<textElement>
+					<font size="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{appointmentId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="50" y="0" width="40" height="20" uuid="9b419301-9140-4bb5-becf-004d6fbd5935"/>
+				<textElement>
+					<font size="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{patientName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="90" y="0" width="20" height="20" uuid="efababd3-a127-437a-ae6e-030653f67ac2"/>
+				<textElement>
+					<font size="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{age}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="110" y="0" width="30" height="20" uuid="2ab8d758-698e-47eb-b881-15985a2634ab"/>
+				<textElement>
+					<font size="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{weight}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="140" y="0" width="30" height="20" uuid="2d105af8-9270-424b-b1ba-4614ee2b16eb"/>
+				<textElement>
+					<font size="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{height}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="170" y="0" width="50" height="20" uuid="d2b984c6-0b8d-4bce-a748-5c943e604e20"/>
+				<textElement>
+					<font size="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{contactNo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="220" y="0" width="40" height="20" uuid="73951b86-445e-4fd1-85ab-d3b1657e8d62"/>
+				<textElement>
+					<font size="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{bloodGroup}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="260" y="0" width="30" height="20" uuid="00899531-3ae9-4286-bd07-7070a4c47331"/>
+				<textElement>
+					<font size="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{address}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="290" y="0" width="50" height="20" uuid="bacd05aa-be94-4b79-8baa-c08324455ac1"/>
+				<textElement>
+					<font size="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{doctorName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="340" y="0" width="60" height="20" uuid="164d85fb-a105-419e-9e4f-814dc0e99be7"/>
+				<textElement>
+					<font size="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{appointmentDate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="400" y="0" width="50" height="20" uuid="543d697b-95ef-4fad-8203-6d9e2af6a051"/>
+				<textElement>
+					<font size="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{appointmentTime}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="0" width="50" height="20" uuid="76311bed-5361-4743-b2ff-d481176f7505"/>
+				<textElement>
+					<font size="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{medicalHistory}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="500" y="0" width="60" height="20" uuid="ebcd707d-bccc-4bb3-8d9a-f08e667a0d43">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bbb90123-4fc6-4127-950b-63ce0a0c6650"/>
+				</reportElement>
+				<textElement>
+					<font size="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{problemDescription}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
